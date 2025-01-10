@@ -7,7 +7,7 @@ const app = new OpenAPIHono();
 export default app;
 
 // @ts-expect-error
-import indexHtml from "./index.html";
+import indexHtml from "./details.html";
 
 app.get("/", async (c) => {
   return c.html(indexHtml);
